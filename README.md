@@ -2,15 +2,14 @@
 
 JS AMAZONA
 
-10. Enable Code Linting
-    1. npm install -D eslint
-    2. install VSCode eslint extension
-    3. Create .eslintrc and set module.exports for env to node
-    4. set VSCode setting for editor.codeActionsOnSave source.fixAll,eslint to true
-    5. check result dor linting error
-    6. npm intall eslint-cinfig-airbnb-base and eslint-plugin-import
-    7. set extends to airbnb-base
-    8. set parserOptions for ecmaVersion 11 and sourceType to module
-    9. set rules for no-console to 0 to ignore linting error
- 
-    
+12. Create Rating Component
+    1. Create components/Rating.js
+    2. create div.rating
+    3. link to fontawesome.css in index.html
+    4. sdefine Rating object with render()
+    5. if !props.value return empty div
+    6. else use fa fa-star, fa-star-half-o and fa-star-o
+    7. last span for props.text || ''
+    8. style div.rating, span and last span
+    9. Edit HomeScreen
+    10. Add div.product-rating and use Rating component
