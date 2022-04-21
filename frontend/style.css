@@ -42,6 +42,14 @@ button.primary {
     width: 100%;
 }
 
+.success {
+    color: #40f040;
+}
+
+.error {
+    color: #c04040;
+}
+
 .grid-container {
     display: grid;
     grid-template-areas: 'header' 'main' 'footer';

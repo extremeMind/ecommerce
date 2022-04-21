@@ -2,6 +2,12 @@ import { getProduct } from '../api.js';
 import { parseRequestUrl } from '../utils.js';
 import Rating from '../components/Rating.js';
 const ProductScreen = {
+        after_render: () => {
+            const request = parseRequestUrl();
+            document.getElementById("add-button").addEventListener('click', () => {
+                document.location.hash = `/cart/${request.id}`;
+            })
+        },
         render: async() => {
                 const request = parseRequestUrl();
                 const product = await getProduct(request.id);
@@ -50,7 +56,7 @@ const ProductScreen = {
                     ${product.countInStock > 0 ? `<span class="success">In Stock</span>`: `<span class="error"> Unavailable </span>` }
                 </li>
                 <li>
-                <button class="fw primary"> Add to Cart </button>
+                <button class="fw primary" id="add-button"> Add to Cart </button>
                 </li>
             </ul>
 
