@@ -4,7 +4,7 @@
     "description": "JS AMAZONA",
     "main": "server.js",
     "scripts": {
-        "start": "node backend/server.js",
+        "start": "nodemon --watch backend --exec babel-node backend/server.js",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "repository": {
@@ -20,5 +20,11 @@
     "dependencies": {
         "cors": "^2.8.5",
         "express": "^4.17.3"
+    },
+    "devDependencies": {
+        "@babel/cli": "^7.17.6",
+        "@babel/core": "^7.17.9",
+        "@babel/node": "^7.16.8",
+        "@babel/preset-env": "^7.16.11"
     }
 }

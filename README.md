@@ -2,16 +2,12 @@
 
 JS AMAZONA
 
-8. Add Webpack
-    1. cd frontend
-    2. npm install -D webpack webpack-cli webpack-dev-server
-    3. npm uninstall live-server
-    4. "start": "webpack-dev-server --mode development --watch-content-base --open"
-    5. move index.html, style.css and iamges to frontend folder
-    6. rename app.js to index.js
-    7. update index.html
-    8. add <script src =  "main.js"></script> before </body>
-    9. npm start
-    10. npm install axios
-    11. change fetch to axios in HomeScreen
+9. Install Babel For ES6 Syntax
+    1. npm install -D babel core, cli, node, preset-env
+    2. Create .babelrc and set presets to @babel/preset-env
+    3. npm install -D nodemon
+    4. set start: nodemon --watch backend --exec babel-node backend/server.js
+    5. convert require to import in server.js
+    6. npm start
+ 
     
