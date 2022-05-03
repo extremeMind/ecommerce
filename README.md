@@ -2,8 +2,12 @@
 
 JS AMAZONA
 
-15. Product Screen Action
-    1. after_render() to add event to the button
-    2. add event handler for the button
-    3. redirect user to cart/:product_id
-    4. implement after_render in index.js
+17. Cart Screen UI
+    1. cartItems = getCartItems()
+    2. Create 2 columns for cart items and cart action
+    3. cartItems.length === 0 ? cart is empty
+    4. show item image, name, qty and price
+    5. cart action
+    6. subtotal
+    7. Proceed to checkout button
+    8. Add CSS Style
