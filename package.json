@@ -19,7 +19,9 @@
     "homepage": "https://github.com/extremeMind/ecommerce#readme",
     "dependencies": {
         "cors": "^2.8.5",
-        "express": "^4.17.3"
+        "dotenv": "^16.0.0",
+        "express": "^4.17.3",
+        "mongoose": "^6.3.2"
     },
     "devDependencies": {
         "@babel/cli": "^7.17.6",
