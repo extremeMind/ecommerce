@@ -3,6 +3,7 @@ import CartScreen from './screens/CartScreen';
 import Error404Screen from './screens/Error404Screen.js';
 import HomeScreen from './screens/HomeScreen';
 import PaymentScreen from './screens/PaymentScreen';
+import PlaceOrderScreen from './screens/PlaceOrderScreen';
 import ProductScreen from './screens/ProductScreen';
 import ProfileScreen from './screens/ProfileScreen';
 import RegisterScreen from './screens/RegisterScreen';
@@ -19,6 +20,7 @@ const routes = {
     "/profile": ProfileScreen,
     '/shipping': ShippingScreen,
     '/payment': PaymentScreen,
+    '/placeorder': PlaceOrderScreen,
 };
 const router = async() => {
     showLoading();
