@@ -1,3 +1,5 @@
+import { JsonWebTokenError } from "jsonwebtoken";
+
 export const getCartItems = () => {
     const cartItems = localStorage.getItem('cartItems') ?
         JSON.parse(localStorage.getItem('cartItems')) : [];
@@ -5,4 +7,21 @@ export const getCartItems = () => {
 };
 export const setCartItems = (cartItems) => {
     localStorage.setItem('cartItems', JSON.stringify(cartItems));
+};
+export const setUserInfo = ({
+    _id = '',
+    name = '',
+    email = '',
+    token = '',
+    isAdmin = false,
+}) => {
+    localStorage.setItem('userInfo', JSON.stringify({ _id, name, email, password, token, isAdmin }));
+};
+
+export const getUserInfo = () => {
+    return localStorage.getItem('userInfo') ? JSON.parse(localStorage.getItem('userInfo')) : {
+        name: '',
+        email: '',
+        password: ''
+    };
 };
