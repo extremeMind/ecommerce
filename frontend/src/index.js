@@ -2,9 +2,11 @@ import Header from './components/Header';
 import CartScreen from './screens/CartScreen';
 import Error404Screen from './screens/Error404Screen.js';
 import HomeScreen from './screens/HomeScreen';
+import PaymentScreen from './screens/PaymentScreen';
 import ProductScreen from './screens/ProductScreen';
 import ProfileScreen from './screens/ProfileScreen';
 import RegisterScreen from './screens/RegisterScreen';
+import ShippingScreen from './screens/ShippingScreen';
 import SigninScreen from './screens/SigninScreen';
 import { hideLoading, parseRequestUrl, showLoading } from './utils.js';
 const routes = {
@@ -15,7 +17,9 @@ const routes = {
     "/signin": SigninScreen,
     "/register": RegisterScreen,
     "/profile": ProfileScreen,
-}
+    '/shipping': ShippingScreen,
+    '/payment': PaymentScreen,
+};
 const router = async() => {
     showLoading();
     const request = parseRequestUrl();
