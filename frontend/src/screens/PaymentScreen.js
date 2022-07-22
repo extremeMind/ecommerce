@@ -35,7 +35,7 @@ const PaymentScreen = {
         </li>
         <li>
         <div>
-            <input type="radio" name="payment-method" id="stripe" value="Stripe" checked/>
+            <input type="radio" name="payment-method" id="stripe" value="Stripe"/>
             <label for="stripe">Stripe</label>
         </div>
         </li>
