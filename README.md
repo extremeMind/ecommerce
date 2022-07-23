@@ -2,7 +2,7 @@
 
 JS AMAZONA
 
-29. PayPal Payment
+30. PayPal Payment
     1. get client id from paypal
     2. set it in .env file
     3. create route form /api/paypal/clientId
