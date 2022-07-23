@@ -5,6 +5,8 @@
     "main": "server.js",
     "scripts": {
         "start": "nodemon --watch backend --exec babel-node backend/server.js",
+        "build": "rm -rf dist && babel backend -d dist",
+        "serve": "node dist/server.js",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "repository": {
@@ -24,7 +26,8 @@
         "express": "^4.17.3",
         "express-async-handler": "^1.2.0",
         "jsonwebtoken": "^8.5.1",
-        "mongoose": "^6.3.2"
+        "mongoose": "^6.3.2",
+        "multer": "^1.4.5-lts.1"
     },
     "devDependencies": {
         "@babel/cli": "^7.17.6",

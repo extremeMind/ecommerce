@@ -6,6 +6,7 @@ import HomeScreen from './screens/HomeScreen';
 import OrderScreen from './screens/OrderScreen';
 import PaymentScreen from './screens/PaymentScreen';
 import PlaceOrderScreen from './screens/PlaceOrderScreen';
+import ProductEditScreen from './screens/ProductEditScreen';
 import ProductListScreen from './screens/ProductListScreen';
 import ProductScreen from './screens/ProductScreen';
 import ProfileScreen from './screens/ProfileScreen';
@@ -15,6 +16,7 @@ import SigninScreen from './screens/SigninScreen';
 import { hideLoading, parseRequestUrl, showLoading } from './utils.js';
 const routes = {
     "/": HomeScreen,
+    "/product/:id/edit": ProductEditScreen,
     "/product/:id": ProductScreen,
     "/order/:id": OrderScreen,
     "/cart/:id": CartScreen,
