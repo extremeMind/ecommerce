@@ -24,6 +24,7 @@ export const getProducts = async({ searchKeyword = '' }) => {
     }
 };
 
+
 export const getProduct = async(id) => {
     try {
         const response = await axios({
