@@ -1,14 +1,15 @@
-import axios from 'axios';
-import { getProducts } from '../api';
 import Rating from '../components/Rating';
-import { hideLoading, showLoading } from '../utils';
+import { getProducts } from '../api';
+import { parseRequestUrl } from '../utils';
+
 const HomeScreen = {
         render: async() => {
-                const products = await getProducts();
-
+                const { value } = parseRequestUrl();
+                const products = await getProducts({ searchKeyword: value });
                 if (products.error) {
                     return `<div class="error">${products.error}</div>`;
                 }
+
                 return `
     <ul class="products">
       ${products
@@ -20,15 +21,15 @@ const HomeScreen = {
             <img src="${product.image}" alt="${product.name}" />
           </a>
         <div class="product-name">
-          <a href="/#/product/${product._id}">
+          <a href="/#/product/1">
             ${product.name}
           </a>
         </div>
         <div class="product-rating">
-        ${Rating.render({
-          value: product.rating, 
-          text: `${product.numReviews} reviews`,
-      })}
+          ${Rating.render({
+            value: product.rating,
+            text: `${product.numReviews} reviews`,
+          })}
         </div>
         <div class="product-brand">
           ${product.brand}
