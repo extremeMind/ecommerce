@@ -368,6 +368,9 @@ footer {
 
 /*Order*/
 
+
+/* Order */
+
 .order {
     display: flex;
     flex-wrap: wrap;
@@ -381,7 +384,7 @@ footer {
     font-size: 2rem;
 }
 
-.order .cart-list-contaier {
+.order .cart-list-container {
     padding: 0;
 }
 
@@ -390,7 +393,7 @@ footer {
 }
 
 .order-info>div {
-    border: 0.1 rem #c0c0c0 solid;
+    border: 0.1rem #c0c0c0 solid;
     border-radius: 0.5rem;
     background-color: #fcfcfc;
     padding: 1rem;
