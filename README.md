@@ -2,8 +2,9 @@
 
 JS AMAZONA
 
-31. Display Orders History
-    1. create customer orders api
-    2. create api for getMyOrders
-    3. show orders in profile screen
+32. Admin Dashboard UI
+    1. Header.js
+    2. if user is admin show Dashboard
+    3. create DashboardMenu
     4. style orders
+    5. Style dashboard
