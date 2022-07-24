@@ -404,3 +404,8 @@ $ cd frontend
 $ npm install
 $ npm start
 ```
+
+```
+#Test App
+https://jsamazonaextreme.herokuapp.com/
+```
